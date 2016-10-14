@@ -4,3 +4,4 @@ Initial script to setup server,
 * create user group
 * adjust memory
 * configure swap accounting
+* add docker to systemd for restarts
