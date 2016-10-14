@@ -16,4 +16,8 @@ sudo systemctl enable docker
 
 sudo perl -pi -e 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"/' /etc/default/grub
 
+echo "Installing Rancher, remember to open port 8080 on EC2 !!!!!"
+sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server
+echo "DONT FORGET TO OPEN PORT 8080 !!!!!!"
+
 echo "Now do a reboot"
