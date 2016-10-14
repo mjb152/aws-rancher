@@ -15,3 +15,5 @@ sudo usermod -aG docker $USER
 sudo systemctl enable docker
 
 sudo perl -pi -e 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"/' /etc/default/grub
+
+echo "Now do a reboot"
