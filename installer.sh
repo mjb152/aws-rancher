@@ -21,3 +21,5 @@ sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server
 echo "DONT FORGET TO OPEN PORT 8080 !!!!!!"
 
 echo "Now do a reboot"
+
+alias whatsmyip='curl ifconfig.co'
